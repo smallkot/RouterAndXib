@@ -4,10 +4,9 @@
 //
 
 #import "RXRouter.h"
-
-
-@interface RXRouter ()
-@end
+#import "RXNoteListViewController.h"
+#import "RXCreateNoteViewController.h"
+#import "RXDetailNoteViewController.h"
 
 
 @implementation RXRouter
@@ -16,15 +15,40 @@
     UIViewController *rootViewController = [self createRootViewController];
     self = [super initWithRootViewController:rootViewController];
     if (self != nil) {
-        [self navigationBar].hidden = YES;
         self.interactivePopGestureRecognizer.enabled = NO;
     }
     return self;
 }
 
 - (UIViewController *)createRootViewController {
-    UIViewController *controller = [[UIViewController alloc] init];
-    controller.view.backgroundColor = [UIColor blueColor];
+    RXNoteListViewController *noteListController = [[RXNoteListViewController alloc] init];
+    __weak RXRouter *weakSelf = self;
+    __weak RXNoteListViewController *weakNoteListController = noteListController;
+    noteListController.createNoteBlock = ^{
+        RXCreateNoteViewController *createNoteViewController = [weakSelf createNoteViewController];
+        createNoteViewController.createNoteBlock = ^(RXNote *note){
+            [weakNoteListController addNote:note];
+            [weakSelf popViewControllerAnimated:YES];
+        };
+        [weakSelf pushViewController:createNoteViewController animated:YES];
+    };
+    noteListController.detailNoteBlock = ^(RXNote *note){
+        RXDetailNoteViewController *detailNoteViewController = [weakSelf createDetailNoteViewControllerWithNote:note];
+        detailNoteViewController.doneBlock = ^{
+            [weakSelf popViewControllerAnimated:YES];
+        };
+        [weakSelf pushViewController:detailNoteViewController animated:YES];
+    };
+    return noteListController;
+}
+
+- (RXCreateNoteViewController *)createNoteViewController {
+    return [[RXCreateNoteViewController alloc] init];
+}
+
+- (RXDetailNoteViewController *)createDetailNoteViewControllerWithNote:(RXNote *)note {
+    RXDetailNoteViewController *controller = [[RXDetailNoteViewController alloc] init];
+    [controller showNote:note];
     return controller;
 }
 

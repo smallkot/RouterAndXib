@@ -13,6 +13,13 @@
 		2D0B9C351B932729005571AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B9C331B932729005571AE /* LaunchScreen.xib */; };
 		2D0B9C411B93272A005571AE /* RouterAndXibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C401B93272A005571AE /* RouterAndXibTests.m */; };
 		2D0B9C4C1B9328D6005571AE /* RXRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C4B1B9328D6005571AE /* RXRouter.m */; };
+		2D0B9C531B932EEE005571AE /* RXNoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C511B932EEE005571AE /* RXNoteListViewController.m */; };
+		2D0B9C541B932EEE005571AE /* RXNoteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B9C521B932EEE005571AE /* RXNoteListViewController.xib */; };
+		2D0B9C5B1B933166005571AE /* RXDetailNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C591B933166005571AE /* RXDetailNoteViewController.m */; };
+		2D0B9C5C1B933166005571AE /* RXDetailNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B9C5A1B933166005571AE /* RXDetailNoteViewController.xib */; };
+		2D0B9C601B933196005571AE /* RXCreateNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C5E1B933196005571AE /* RXCreateNoteViewController.m */; };
+		2D0B9C611B933196005571AE /* RXCreateNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0B9C5F1B933196005571AE /* RXCreateNoteViewController.xib */; };
+		2D0B9C651B9338C6005571AE /* RXNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B9C641B9338C6005571AE /* RXNote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,17 @@
 		2D0B9C401B93272A005571AE /* RouterAndXibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterAndXibTests.m; sourceTree = "<group>"; };
 		2D0B9C4A1B9328D6005571AE /* RXRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXRouter.h; sourceTree = "<group>"; };
 		2D0B9C4B1B9328D6005571AE /* RXRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXRouter.m; sourceTree = "<group>"; };
+		2D0B9C501B932EEE005571AE /* RXNoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXNoteListViewController.h; sourceTree = "<group>"; };
+		2D0B9C511B932EEE005571AE /* RXNoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXNoteListViewController.m; sourceTree = "<group>"; };
+		2D0B9C521B932EEE005571AE /* RXNoteListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RXNoteListViewController.xib; sourceTree = "<group>"; };
+		2D0B9C581B933166005571AE /* RXDetailNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXDetailNoteViewController.h; sourceTree = "<group>"; };
+		2D0B9C591B933166005571AE /* RXDetailNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXDetailNoteViewController.m; sourceTree = "<group>"; };
+		2D0B9C5A1B933166005571AE /* RXDetailNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RXDetailNoteViewController.xib; sourceTree = "<group>"; };
+		2D0B9C5D1B933196005571AE /* RXCreateNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXCreateNoteViewController.h; sourceTree = "<group>"; };
+		2D0B9C5E1B933196005571AE /* RXCreateNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXCreateNoteViewController.m; sourceTree = "<group>"; };
+		2D0B9C5F1B933196005571AE /* RXCreateNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RXCreateNoteViewController.xib; sourceTree = "<group>"; };
+		2D0B9C631B9338C6005571AE /* RXNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXNote.h; sourceTree = "<group>"; };
+		2D0B9C641B9338C6005571AE /* RXNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXNote.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,8 @@
 			children = (
 				2D0B9C4D1B9328EA005571AE /* App */,
 				2D0B9C4E1B932903005571AE /* Router */,
+				2D0B9C621B9338A7005571AE /* Model */,
+				2D0B9C4F1B932E71005571AE /* ViewController */,
 				2D0B9C311B932729005571AE /* Images.xcassets */,
 				2D0B9C331B932729005571AE /* LaunchScreen.xib */,
 				2D0B9C241B932729005571AE /* Supporting Files */,
@@ -130,6 +150,55 @@
 				2D0B9C4B1B9328D6005571AE /* RXRouter.m */,
 			);
 			name = Router;
+			sourceTree = "<group>";
+		};
+		2D0B9C4F1B932E71005571AE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D0B9C551B93313E005571AE /* NoteList */,
+				2D0B9C571B93314F005571AE /* NoteCreate */,
+				2D0B9C561B93314B005571AE /* NoteDetail */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2D0B9C551B93313E005571AE /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				2D0B9C501B932EEE005571AE /* RXNoteListViewController.h */,
+				2D0B9C511B932EEE005571AE /* RXNoteListViewController.m */,
+				2D0B9C521B932EEE005571AE /* RXNoteListViewController.xib */,
+			);
+			name = NoteList;
+			sourceTree = "<group>";
+		};
+		2D0B9C561B93314B005571AE /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2D0B9C581B933166005571AE /* RXDetailNoteViewController.h */,
+				2D0B9C591B933166005571AE /* RXDetailNoteViewController.m */,
+				2D0B9C5A1B933166005571AE /* RXDetailNoteViewController.xib */,
+			);
+			name = NoteDetail;
+			sourceTree = "<group>";
+		};
+		2D0B9C571B93314F005571AE /* NoteCreate */ = {
+			isa = PBXGroup;
+			children = (
+				2D0B9C5D1B933196005571AE /* RXCreateNoteViewController.h */,
+				2D0B9C5E1B933196005571AE /* RXCreateNoteViewController.m */,
+				2D0B9C5F1B933196005571AE /* RXCreateNoteViewController.xib */,
+			);
+			name = NoteCreate;
+			sourceTree = "<group>";
+		};
+		2D0B9C621B9338A7005571AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D0B9C631B9338C6005571AE /* RXNote.h */,
+				2D0B9C641B9338C6005571AE /* RXNote.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0B9C351B932729005571AE /* LaunchScreen.xib in Resources */,
+				2D0B9C5C1B933166005571AE /* RXDetailNoteViewController.xib in Resources */,
+				2D0B9C541B932EEE005571AE /* RXNoteListViewController.xib in Resources */,
 				2D0B9C321B932729005571AE /* Images.xcassets in Resources */,
+				2D0B9C611B933196005571AE /* RXCreateNoteViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,8 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0B9C651B9338C6005571AE /* RXNote.m in Sources */,
+				2D0B9C601B933196005571AE /* RXCreateNoteViewController.m in Sources */,
+				2D0B9C531B932EEE005571AE /* RXNoteListViewController.m in Sources */,
 				2D0B9C2A1B932729005571AE /* RXAppDelegate.m in Sources */,
 				2D0B9C271B932729005571AE /* main.m in Sources */,
+				2D0B9C5B1B933166005571AE /* RXDetailNoteViewController.m in Sources */,
 				2D0B9C4C1B9328D6005571AE /* RXRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
