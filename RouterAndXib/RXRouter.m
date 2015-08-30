@@ -34,9 +34,6 @@
     };
     noteListController.detailNoteBlock = ^(RXNote *note){
         RXDetailNoteViewController *detailNoteViewController = [weakSelf createDetailNoteViewControllerWithNote:note];
-        detailNoteViewController.doneBlock = ^{
-            [weakSelf popViewControllerAnimated:YES];
-        };
         [weakSelf pushViewController:detailNoteViewController animated:YES];
     };
     return noteListController;

@@ -7,12 +7,9 @@
 
 
 @class RXNote;
-typedef void (^RXDetailNoteViewControllerDoneBlock)();
 
 
 @interface RXDetailNoteViewController : UIViewController
-
-@property (copy, nonatomic) RXDetailNoteViewControllerDoneBlock doneBlock;
 
 - (void)showNote:(RXNote *)note;
 

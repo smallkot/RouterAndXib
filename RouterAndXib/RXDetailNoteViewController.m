@@ -24,15 +24,6 @@
     [self showNote:self.note];
 }
 
-- (void)done {
-    if (self.doneBlock == nil) {
-        NSLog(@"no block: doneBlock");
-        return;
-    }
-    
-    self.doneBlock();
-}
-
 
 #pragma mark - Public
 
